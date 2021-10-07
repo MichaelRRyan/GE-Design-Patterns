@@ -52,4 +52,10 @@ void Game::render()
 void Game::cleanUp()
 {
     std::cout << "Cleaning up" << std::endl;
+
+    for (BrickFactory * factory : m_factories)
+        delete factory;
+       
+    for (Brick * brick : m_bricks)
+        delete brick;
 }
