@@ -4,8 +4,8 @@ SRC_DIR		:= ./src
 OUTPUT_NAME	:= "Design Patterns"
 COMP_FILES	:= ${SRC_DIR}/main.cpp ${SRC_DIR}/Game.cpp
 
-INCLUDE		:= "C:\SDL2-2.0.16\i686-w64-mingw32\include\SDL2"
-LIB			:= "C:\SDL2-2.0.16\i686-w64-mingw32\lib"
+INCLUDE		:= "C:\Tools\SDL2-2.0.16\i686-w64-mingw32\include\SDL2"
+LIB			:= "C:\Tools\SDL2-2.0.16\i686-w64-mingw32\lib"
 DLL			:= "-lmingw32" "-lSDL2main" "-lSDL2"
 
 MSG_START	:= "Build Started"

@@ -20,7 +20,12 @@ private:
     Graphic * getInstance(void)
     { 
         if (!m_graphic)
+        {
             m_graphic = new Graphic(m_objectName);
+
+            std::cout << "Graphic proxy at location " << this
+                << " requested for a graphic instance, created one at location " << &m_graphic << std::endl;
+        }
         return m_graphic;
     }
 
